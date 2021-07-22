@@ -76,6 +76,7 @@ $(".each-input .tip-val").click(function(){
     percent=$(this).find("p").text()
     percent=percent.substr(0,percent.length-1)
     tip_percent=parseInt(percent)
+    calculate_tip()
     $("#custom-tip-input").slideUp("fast",function(){
         $("#custom-button").slideDown("fast");
     });
